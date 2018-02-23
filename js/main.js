@@ -57,11 +57,12 @@
       // https://segmentfault.com/a/1190000003853394
       // http://www.alloyteam.com/2014/01/use-js-file-download/
       // https://stackoverflow.com/questions/923885/capture-html-canvas-as-gif-jpg-png-pdf
-      let image = canvas.toDataURL("image/png");
-      let a = document.createElement('a');
-      a.href = image
-      a.download = 'image';
-      a.click();
+      // let image = canvas.toDataURL("image/png");
+      // let a = document.createElement('a');
+      // a.href = image
+      // a.download = 'image';
+      // a.click();
+      window.open(canvas.toDataURL('image/png'));
     })
 
     $('.reset').on('click',function(){
