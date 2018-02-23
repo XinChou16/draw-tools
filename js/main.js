@@ -59,7 +59,8 @@
       // https://stackoverflow.com/questions/923885/capture-html-canvas-as-gif-jpg-png-pdf
       let image = canvas.toDataURL("image/png");
       let a = document.createElement('a');
-      a.download = image;
+      a.href = image
+      a.download = 'image';
       a.click();
     })
 
